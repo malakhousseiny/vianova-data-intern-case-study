@@ -62,29 +62,6 @@ To run the project, follow these steps:
 
 7. The script will generate the `result.tsv` file, which contains the list of countries without a megapolis.
 
-
-
-Deployment:
-- This project is intended to be run locally.
-- To automate it, you can set up a scheduled task or use the Task Scheduler on your operating system to run the Python scripts periodically.
-
-Built With:
-- Python 3.x: The programming language used.
-- SQLite: The database engine used for storing and querying the data.
-
-Author:
-- [Your Name](https://github.com/yourusername)
-
-License:
-- This project is licensed under the MIT License.
-
-For more details, please refer to the project's GitHub repository.
-
-Running the Program:
-- Execute the Python script "fetch_data.py" using the Anaconda Prompt or terminal to fetch the dataset and store it in a SQLite database.
-- Run the Python script "query.py" using the Anaconda Prompt or terminal to perform a query and compute the countries without megapolises.
-- The result will be saved as a CSV file, ordered by country name.
-
 Deployment:
 - This project is intended to be run locally.
 - To automate it, you can set up a scheduled task or use the Task Scheduler on your operating system to run the Python scripts periodically, or once in a week to update the result data.
