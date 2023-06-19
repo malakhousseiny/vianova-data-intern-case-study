@@ -1,0 +1,43 @@
+Task Scheduler Configuration
+
+This document provides step-by-step instructions on how to set up the Task Scheduler on Windows to automatically execute a Python program.
+
+Prerequisites
+
+Before proceeding with the Task Scheduler configuration, ensure the following prerequisites are met:
+
+    Windows operating system (e.g., Windows 10)
+    Python installed on the system
+    Python script and any required files prepared and stored in a specific directory
+    
+    
+    Steps
+
+To configure the Task Scheduler, adhere to these steps:
+
+    1-Search for "Task Scheduler" in the Start menu to launch the Task Scheduler program.
+
+    2-The task creation wizard will launch when you click "Create Basic Task".
+
+    3-Give your job a meaningful name in the "Name" column, such as "Python Program Scheduler".
+
+    4-To decide when the task should be completed, choose the suitable trigger from the "Trigger" column. To run weekly as given, select "Weekly" and specify the task's preferred day and hour. for example: Monday 0:00, so the program will be updated each monday at 0:00h
+
+    5-Select "Start a program" as the action to be carried out in the "Action" section.
+
+    6-The path to the Python interpreter should be entered in the "Program/Script" column. This will frequently be C:PythonXXpython.exe, where "XX" stands for the version number.
+
+    7-Enter the path to the Python script you want to run automatically in the "Add arguments" area. Enter C:Path to your script.py, for instance, if your script is located at that location.
+
+    8-Optionally, you can define the user account under which the task shall run or configure error handling and notifications, among other conditions and settings for your task.
+
+    9-Examine the task summary, then press "Finish" to finish creating the job.
+
+    10-The Task Scheduler has been set up to run your Python program automatically. The trigger you specify will cause the task to run.
+
+
+        Notes
+
+    Make sure the Python environment and any dependencies your script needs are correctly installed on the machine.
+    To prevent any execution problems, double-check the Task Scheduler configuration's route to the Python interpreter and the Python script.
+    Maintain regular watch over the task's execution and go over the logs to make sure it goes off without a hitch.
